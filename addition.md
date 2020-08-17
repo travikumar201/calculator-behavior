@@ -1,17 +1,13 @@
 # Addition
 
-Scenario: (describe a scenario here)
-  
-  Given (state the initial condition)
+Scenario: Result is too large to display (or overrunning the limits)
 
-  When (state the event)
-  
-  Then (state the effect)
+  Given I have a calculator that's turned on.
 
-Scenario: (describe a scenario here)
+  When I enter "number1"
+  And I press "+" button
+  And I enter "number2"
+  And I press "=" button
+  And if the result length is greater than max display length
   
-  Given (state the initial condition)
-  
-  When (state the event)
-  
-  Then (state the effect)
+  Then I see the the result in terms of base 10
