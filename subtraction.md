@@ -1,4 +1,4 @@
-#Subtraction
+# Subtraction
 
 Scenario: Subtraction yields an addition
 
